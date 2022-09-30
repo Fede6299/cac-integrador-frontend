@@ -1,10 +1,11 @@
 * {
     box-sizing: border-box;
+    font-family: sans-serif;
 }
 
 body {
-    font-family: sans-serif;
     margin: 0;
+    padding: 0;
 }
 
 .container {
@@ -12,28 +13,41 @@ body {
     margin: auto;
 }
 
-header {
-    background-color: darkslategray;
-}
-
-header .logo {
+.container .logo {
     margin: 0;
-    padding: 25px 30px;
     color: white;
+    text-align: center;
+    display: flex;
+    align-items: center;
 }
 
 header .container {
+    background-color: darkslategray;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
+
+.container img {
+    height: 100%;
+    width: 200px;
+    display: flex;
+}
+
+/* .container h2 {
+    margin: 0;
+    display: flex;
+    text-align: center;
+} */
 
 header nav {
     display: flex;
     flex-direction: column;
     text-align: center;
     padding-bottom: 25px;
+    margin: 0;
 }
+
 a {
     text-decoration: none;
     color: white;
@@ -42,22 +56,17 @@ a {
 header a {
     padding: 5px 12px;
 }
+
 nav .nav-link {
     color: dimgray;
 }
+
 nav .nav-compra {
     color: #4CAF50;
 }
 
 nav a:hover {
     color: white;
-}
-
-footer{
-    background-color: indigo;
-}
-footer a:hover {
-    color: dimgray;
 }
 
 #hero {
@@ -68,104 +77,191 @@ footer a:hover {
     flex-direction: column;
     height: 90vh;
     color: white;
-    background-image: linear-gradient(
-        0deg,
-        rgba(0,0,0,0.5),
-        rgba(0,0,0,0.5)
-    )
-    ,url("../img/ba1.jpg");
+    background-image: linear-gradient(0deg,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)), url("../img/ba1.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
 }
 
+button {
+    border-radius: 6px;
+}
+
+#hero .buttons {
+    display: inline-flex;
+}
+
+#orador {
+    padding: 8px;
+    border: none;
+    color: white;
+    background-color: Transparent;
+    background-repeat: no-repeat;
+    border: 1px solid white;
+    cursor: pointer;
+    overflow: hidden;
+    display: inline-flex;
+    margin-right: 8px;
+    cursor: pointer;
+}
+
+#ticket {
+    cursor: pointer;
+    display: inline-flex;
+    padding: 8px 14px;
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    margin-left: 8px;
+}
+
+#oradores {
+    background: burlywood;
+}
+
 #oradores .container {
     text-align: center;
     color: black;
-    background-color: burlywood;
     padding: 150px 12px;
     margin: 0;
 }
 
-#oradores .js{
+#oradores .card {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+#oradores .js {
     background-color: yellow;
     display: inline-flex;
-    padding: 4px;
+    padding: 5px;
     border-radius: 6px;
-    margin: 5px;
+    margin: 10px 10px 0px 0px;
     color: black;
 }
 
 #oradores .react {
     background-color: rgb(149, 149, 238);
     display: inline-flex;
-    padding: 4px;
+    padding: 5px;
     border-radius: 6px;
-    margin: 5px;
+    margin: 10px 0px 0px 0px;
     color: white;
 }
 
-#oradores .businnes{
+#oradores .businnes {
     background-color: darkgray;
     display: inline-flex;
-    padding: 4px;
+    padding: 5px;
     border-radius: 6px;
-    margin: 5px;
+    margin: 10px 10px 0px 0px;
     color: white;
 }
 
-#oradores .Startups{
+#oradores .Startups {
     background-color: crimson;
     display: inline-flex;
-    padding: 4px;
+    padding: 5px;
     border-radius: 6px;
-    margin: 5px;
+    margin: 10px 0px 0px 0px;
     color: white;
 }
 
-#oradores .card {
-    text-align: center;
-    justify-content: center;
+.etiqueta {
+    display: inline-flexbox;
 }
 
 #oradores img {
     height: 100%;
     width: 200px;
-    display: block;
+    align-items: center;
 }
 
-/* .card:first-child {
-    background-image: linear-gradient(
-        0deg,
-        rgba(0,0,0,0.5),
-        rgba(0,0,0,0.5)
-    )
-    ,url("../img/steve.jpg");
-}
-
-.card:nth-child(2){
-    background-image: linear-gradient(
-        0deg,
-        rgba(0,0,0,0.5),
-        rgba(0,0,0,0.5)
-    )
-    ,url("../img/bill.jpg");
-}
-
-.card:nth-child(3){
-    background-image: linear-gradient(
-        0deg,
-        rgba(0,0,0,0.5),
-        rgba(0,0,0,0.5)
-    )
-    ,url("../img/ada.jpeg");
-} */
-
-#bsas-octubre .container{
+#bsas-octubre .container {
     text-align: center;
-    padding: 200px 12 px;
+    padding: 200px 12px;
     background-color: dimgray;
     color: white;
+}
+
+#bsas-octubre button {
+    background-color: Transparent;
+    background-repeat: no-repeat;
+    border: 1px solid white;
+    cursor: pointer;
+    overflow: hidden;
+    color: white;
+    padding: 8px;
+}
+
+#form-oradores .container {
+    text-align: center;
+}
+
+#form-oradores textarea {
+    margin-top: 10px;
+    width: 80%;
+}
+
+input {
+    padding: 8px;
+    width: 80%;
+}
+#nombre {
+    margin-bottom: 10px;
+}
+
+#form-oradores h4 {
+    margin-bottom: 5px;
+}
+
+#form-oradores h1 {
+    margin-top: 0px;
+}
+
+#form-oradores button {
+    cursor: pointer;
+    margin-bottom: 20px;
+    background-color: greenyellow;
+    color: white;
+    border: none;
+    padding: 8px;
+    min-width: 80%;
+}
+
+#pie-pagina .container {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    flex-direction: column;
+    display: inline-flex;
+}
+
+.container a {
+    margin: 5px 0px;
+}
+
+footer {
+
+    background-image: linear-gradient(to right, rgb(56, 28, 180), rgb(132, 121, 179));
+}
+
+footer a:hover {
+    color: dimgray;
+}
+
+@media (min-width: 720px) {
+    header .container {
+        flex-direction: row;
+    }
+
+    header nav {
+        flex-direction: row;
+    }
 }
 
 /* 
@@ -173,15 +269,12 @@ a {
     text-decoration: none;
     color: white;
 }
-
-
     display: flex;
     justify-content: space-between;
     min-height: 70px;
     
     align-items: center;
     padding: 10px;
-
 
 .logo {
     display: flex;
@@ -194,10 +287,6 @@ a {
 }
 
 
-
-button {
-    border-radius: 6px;
-}
 
 #ticket {
     background-color: #4CAF50; // Green 
