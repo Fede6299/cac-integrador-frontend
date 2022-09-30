@@ -1,0 +1,207 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    margin: 0;
+}
+
+.container {
+    max-width: 1400px;
+    margin: auto;
+}
+
+header {
+    background-color: darkslategray;
+}
+
+header .logo {
+    margin: 0;
+    padding: 25px 30px;
+    color: white;
+}
+
+header .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header nav {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
+}
+a {
+    text-decoration: none;
+    color: white;
+}
+
+header a {
+    padding: 5px 12px;
+}
+nav .nav-link {
+    color: dimgray;
+}
+nav .nav-compra {
+    color: #4CAF50;
+}
+
+nav a:hover {
+    color: white;
+}
+
+footer{
+    background-color: indigo;
+}
+footer a:hover {
+    color: dimgray;
+}
+
+#hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    color: white;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("../img/ba1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#oradores .container {
+    text-align: center;
+    color: black;
+    background-color: burlywood;
+    padding: 150px 12px;
+    margin: 0;
+}
+
+#oradores .js{
+    background-color: yellow;
+    display: inline-flex;
+    padding: 4px;
+    border-radius: 6px;
+    margin: 5px;
+    color: black;
+}
+
+#oradores .react {
+    background-color: rgb(149, 149, 238);
+    display: inline-flex;
+    padding: 4px;
+    border-radius: 6px;
+    margin: 5px;
+    color: white;
+}
+
+#oradores .businnes{
+    background-color: darkgray;
+    display: inline-flex;
+    padding: 4px;
+    border-radius: 6px;
+    margin: 5px;
+    color: white;
+}
+
+#oradores .Startups{
+    background-color: crimson;
+    display: inline-flex;
+    padding: 4px;
+    border-radius: 6px;
+    margin: 5px;
+    color: white;
+}
+
+#oradores .card {
+    text-align: center;
+    justify-content: center;
+}
+
+#oradores img {
+    height: 100%;
+    width: 200px;
+    display: block;
+}
+
+/* .card:first-child {
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("../img/steve.jpg");
+}
+
+.card:nth-child(2){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("../img/bill.jpg");
+}
+
+.card:nth-child(3){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("../img/ada.jpeg");
+} */
+
+#bsas-octubre .container{
+    text-align: center;
+    padding: 200px 12 px;
+    background-color: dimgray;
+    color: white;
+}
+
+/* 
+a {
+    text-decoration: none;
+    color: white;
+}
+
+
+    display: flex;
+    justify-content: space-between;
+    min-height: 70px;
+    
+    align-items: center;
+    padding: 10px;
+
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 50px;
+    margin-right: 10px;
+}
+
+
+
+button {
+    border-radius: 6px;
+}
+
+#ticket {
+    background-color: #4CAF50; // Green 
+    border: none;
+    color: white;
+} 
+*/
