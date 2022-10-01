@@ -22,7 +22,7 @@ body {
 }
 
 header .container {
-    background-color: darkslategray;
+    background-color: #353a40;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -33,12 +33,6 @@ header .container {
     width: 200px;
     display: flex;
 }
-
-/* .container h2 {
-    margin: 0;
-    display: flex;
-    text-align: center;
-} */
 
 header nav {
     display: flex;
@@ -58,11 +52,11 @@ header a {
 }
 
 nav .nav-link {
-    color: dimgray;
+    color: #999ca2
 }
 
 nav .nav-compra {
-    color: #4CAF50;
+    color: #298d42;
 }
 
 nav a:hover {
@@ -111,7 +105,7 @@ button {
     cursor: pointer;
     display: inline-flex;
     padding: 8px 14px;
-    background-color: #4CAF50;
+    background-color: #29a744;
     border: none;
     color: white;
     margin-left: 8px;
@@ -119,6 +113,10 @@ button {
 
 #oradores {
     background: burlywood;
+}
+
+#oradores h3 {
+    font-weight: 200;
 }
 
 #oradores .container {
@@ -136,39 +134,43 @@ button {
 }
 
 #oradores .js {
-    background-color: yellow;
+    background-color: #fec107;
     display: inline-flex;
     padding: 5px;
     border-radius: 6px;
     margin: 10px 10px 0px 0px;
     color: black;
+    font-weight: bolder;
 }
 
 #oradores .react {
-    background-color: rgb(149, 149, 238);
+    background-color: #17a2b9;
     display: inline-flex;
     padding: 5px;
     border-radius: 6px;
     margin: 10px 0px 0px 0px;
     color: white;
+    font-weight: bolder;
 }
 
 #oradores .businnes {
-    background-color: darkgray;
+    background-color: #6c757d;
     display: inline-flex;
     padding: 5px;
     border-radius: 6px;
     margin: 10px 10px 0px 0px;
     color: white;
+    font-weight: bolder;
 }
 
 #oradores .Startups {
-    background-color: crimson;
+    background-color: #dd3446;
     display: inline-flex;
     padding: 5px;
     border-radius: 6px;
     margin: 10px 0px 0px 0px;
     color: white;
+    font-weight: bolder;
 }
 
 .etiqueta {
@@ -184,7 +186,7 @@ button {
 #bsas-octubre .container {
     text-align: center;
     padding: 200px 12px;
-    background-color: dimgray;
+    background-color: #353a40;
     color: white;
 }
 
@@ -202,6 +204,10 @@ button {
     text-align: center;
 }
 
+#form-oradores h4 {
+    font-weight: 200;
+}
+
 #form-oradores textarea {
     margin-top: 10px;
     width: 80%;
@@ -211,6 +217,7 @@ input {
     padding: 8px;
     width: 80%;
 }
+
 #nombre {
     margin-bottom: 10px;
 }
@@ -226,7 +233,7 @@ input {
 #form-oradores button {
     cursor: pointer;
     margin-bottom: 20px;
-    background-color: greenyellow;
+    background-color: #96c93e;
     color: white;
     border: none;
     padding: 8px;
@@ -241,17 +248,12 @@ input {
     display: inline-flex;
 }
 
-.container a {
-    margin: 5px 0px;
-}
-
 footer {
-
-    background-image: linear-gradient(to right, rgb(56, 28, 180), rgb(132, 121, 179));
+    background-image: linear-gradient(to right, #1d3947, #1f4e6a);
 }
 
 footer a:hover {
-    color: dimgray;
+    color: #999ca2;
 }
 
 @media (min-width: 720px) {
@@ -259,38 +261,25 @@ footer a:hover {
         flex-direction: row;
     }
 
+    .container img {
+        height: 100%;
+        width: 80px;
+        display: flex;
+    }
+
+    .container h2 {
+        font-size: 20px;
+    }
+
     header nav {
         flex-direction: row;
+        padding-bottom: 0;
+    }
+    footer .container {
+        padding-top: 0.6250rem;
+        padding-bottom: 0.6250rem;
+        flex-direction: row;
+        display: inline-flex;
+
     }
 }
-
-/* 
-a {
-    text-decoration: none;
-    color: white;
-}
-    display: flex;
-    justify-content: space-between;
-    min-height: 70px;
-    
-    align-items: center;
-    padding: 10px;
-
-.logo {
-    display: flex;
-    align-items: center;
-}
-
-.logo img {
-    height: 50px;
-    margin-right: 10px;
-}
-
-
-
-#ticket {
-    background-color: #4CAF50; // Green 
-    border: none;
-    color: white;
-} 
-*/
