@@ -5,11 +5,11 @@
     list-style: none;
     box-sizing: border-box;
 }
-
 nav{
     background-color: #353a40;
     height: 80px;
     width: 100%;
+    position: sticky;
 }
 .enlace{
     position: absolute;
@@ -32,18 +32,16 @@ nav ul li a{
     font-size: 18px;
     padding: 7px 13px;
     border-radius: 3px;
-    text-transform: uppercase;
 }
 .nav-compra {
     color: #298d42;
 }
-li a.active, li a,a.nav-compra:hover{
-    background: white;
-    transition: .5s;
+ul a:hover{
+    color: white;
 }
 .checkbtn{
     font-size: 30px;
-    color: white;
+    color: #999ca2;
     float: right;
     line-height: 80px;
     margin-right: 40px;
@@ -54,13 +52,13 @@ li a.active, li a,a.nav-compra:hover{
     display: none;
 }
 section{
-    background: url(/img/hawaii.jpg) no-repeat;
+    background: url(/cac-integrador-frontend/img/hawaii.jpg) no-repeat;
     background-size: cover;
     background-position: center center;
     height: calc(100vh - 80px);
 }
 
-@media (max-width: 952px){
+@media (max-width: 1080px){
     .enlace{
         padding-left: 20px;
     }
@@ -69,7 +67,7 @@ section{
     }
 }
 
-@media (max-width: 858px){
+@media (max-width: 980px){
     .checkbtn{
         display: block;
     }
@@ -93,7 +91,7 @@ section{
     }
     li a:hover, li a.active{
         background: none;
-        color: red;
+        
     }
     #check:checked ~ ul{
         left:0;
