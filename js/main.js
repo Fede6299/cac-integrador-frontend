@@ -1,36 +1,32 @@
-let descuentoEstudiante	= 0.2;
-let descuentoTrainee	= 0.5;
-let descuentoJunior 	= 0.85;
-
+let descEstudiante	= 0.2;
+let descTrainee	= 0.5;
+let descjunior 	= 0.85;
+let precio = 0;
 const btnNumber 		= document.getElementById('cantidad');
 const btnResumen		= document.getElementById('resumen');
-const btnReestablecer 	= document.getElementById('borrar')
-
+const btnrestablecer 	= document.getElementById('borrar')
 const optionCategoria	= document.getElementById('categoria');
 
-btnNumber.addEventListener("click", precioFinal);
+btnNumber.addEventListener("click", final);
 btnResumen.addEventListener("click", resumen);
-btnReestablecer.addEventListener("click", reestablecer);
+btnrestablecer.addEventListener("click", restablecer);
 
 
-function precioFinal(){
-
-	let precio = 0;
+function final(){
 
 	if (optionCategoria.value == 'Estudiante') {
-		precio = (200 * descuentoEstudiante) * btnNumber.value;
+		precio = (200 * descEstudiante) * btnNumber.value;
 	} else if (optionCategoria.value == 'Trainee') {
-		precio = (200 * descuentoTrainee) * btnNumber.value;
+		precio = (200 * descTrainee) * btnNumber.value;
 	} else {
-		precio = (200 * descuentoJunior) * btnNumber.value;
+		precio = (200 * descjunior) * btnNumber.value;
 	}
-
 	return precio;
 }
 
-function reestablecer(){
-	document.getElementById("total_a_pagar").innerHTML = '0.00';
+function restablecer(){
+	document.getElementById("totalAPagar").innerHTML = '0.00';
 }
 
 function resumen(){
-	document.getElementById("total_a_pagar").innerHTML = precioFinal()}
+	document.getElementById("totalAPagar").innerHTML = final()}
